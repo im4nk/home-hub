@@ -1,0 +1,19 @@
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    height: 100vh;
+}
+
+.sticky-top {
+    position: fixed;
+    width: 100%;
+}

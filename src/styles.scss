@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import url(assets/css/fontiran.css);
+body {
+    font-family: IRANSans !important;
+    font-weight: 300 !important;
+    direction: rtl;
+    background-color: #f8fafe !important;
+    margin: 0;
+    color: #555555 !important;
+    font-size: 14px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+    font-family: IRANSans !important;
+}
+
+.form-control.ng-touched.ng-invalid {
+    border: 2px solid #d31f1f;
+}
+
+.validation-error {
+    color: #d31f1f;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.home-hub-btn {
+    background-color: #845CFF;
+    color: #fff;
+    border-radius: 30px;
+    width: 206px;
+    height: 42px;
+    border-color: transparent;
+}
+
+.home-hub-btn:hover {
+    background-color: #FF0085;
+    color: #fff;
+}
+
+.home-hub-btn:disabled {
+    color: #fff;
+    background-color: #888;
+}
+
+.empty-container {
+    img {
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+}

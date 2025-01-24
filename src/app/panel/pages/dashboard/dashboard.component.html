@@ -1,0 +1,403 @@
+<div class="container-fluid bg-light wh-100 vh-100">
+  <!-- Header -->
+  <header
+    class="d-flex justify-content-between align-items-center p-3 shadow-sm bg-white"
+  >
+    <div class="d-flex align-items-center">
+      <span class="me-2 text-secondary">داشبورد</span>
+      <button class="btn btn-light border" style="border-radius: 50%">
+        <i class="bi bi-grid"></i>
+      </button>
+    </div>
+    <div class="d-flex align-items-center">
+      <input
+        type="text"
+        class="form-control me-2"
+        placeholder="Search Anything..."
+        style="width: 300px; border-radius: 20px"
+      />
+      <button class="btn btn-light border me-2" style="border-radius: 50%">
+        <i class="bi bi-search text-primary"></i>
+      </button>
+      <button class="btn btn-light border me-2" style="border-radius: 50%">
+        <i class="bi bi-bell text-primary"></i>
+      </button>
+    </div>
+  </header>
+  <main class="text-center py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <div class="card shadow-sm p-4">
+          <img
+            src="assets/images/Login-rafiki 1.svg"
+            alt="Register"
+            height="200"
+            class="card-img-top mx-auto"
+            style="max-width: 100px"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-primary">ثبت نام</h5>
+            <button
+              class="btn btn-primary rounded-circle"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalStep1"
+            >
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow-sm p-4">
+          <img
+            src="assets/images/Building-cuate 1.svg"
+            alt="Building"
+            height="200"
+            class="card-img-top mx-auto"
+            style="max-width: 100px"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-primary">ایجاد ساختمان</h5>
+            <button
+              class="btn btn-primary rounded-circle"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#buildingModal"
+            >
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="text-center mt-auto">
+    <img src="assets/images/city.svg" alt="Cityscape" class="img-fluid" />
+  </footer>
+</div>
+
+<!-- modal -->
+
+<div
+  class="modal fade"
+  id="buildingModal"
+  tabindex="-1"
+  aria-labelledby="buildingModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Header -->
+      <div class="modal-header">
+        <h5 class="modal-title text-primary" id="buildingModalLabel">
+          ایجاد ساختمان
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <!-- نوع ساختمان -->
+            <div class="col-md-6 mb-3">
+              <label for="buildingType" class="form-label text-primary"
+                >نوع ساختمان</label
+              >
+              <select id="buildingType" class="form-select bg-light">
+                <option selected disabled>نوع ساختمان را انتخاب کنید</option>
+                <option value="residential">ساختمان</option>
+                <option value="commercial">بلوک</option>
+                <option value="industrial">مجتمع</option>
+                <option value="mixed">برج</option>
+              </select>
+            </div>
+
+            <!-- کاربری ساختمان -->
+            <div class="col-md-6 mb-3">
+              <label for="buildingType" class="form-label text-primary"
+                >کاربری ساختمان</label
+              >
+              <select id="buildingType" class="form-select bg-light">
+                <option selected disabled>کاربری ساختمان را انتخاب کنید</option>
+                <option value="residential">مسکونی</option>
+                <option value="commercial">اداری</option>
+                <option value="industrial">تجاری</option>
+                <option value="mixed">ویلایی</option>
+              </select>
+            </div>
+
+            <!-- نام ساختمان -->
+            <div class="col-md-6 mb-3">
+              <label for="buildingName" class="form-label text-primary"
+                >نام ساختمان</label
+              >
+              <input
+                type="text"
+                id="buildingName"
+                class="form-control bg-light"
+                placeholder="نام ساختمان را وارد کنید"
+              />
+            </div>
+
+            <!-- تعداد واحد -->
+            <div class="col-md-6 mb-3">
+              <label for="unitCount" class="form-label text-primary"
+                >تعداد واحد</label
+              >
+              <input
+                type="number"
+                id="unitCount"
+                class="form-control bg-light"
+                placeholder="تعداد واحد را وارد کنید"
+              />
+            </div>
+
+            <!-- شارژ ساختمان -->
+            <div class="col-md-6 mb-3">
+              <label for="buildingCharge" class="form-label text-primary"
+                >شارژ ساختمان</label
+              >
+              <input
+                type="number"
+                id="buildingCharge"
+                class="form-control bg-light"
+                placeholder="شارژ ساختمان را وارد کنید"
+              />
+            </div>
+
+            <!-- موجودی ساختمان -->
+            <div class="col-md-6 mb-3">
+              <label for="buildingBalance" class="form-label text-primary"
+                >موجودی ساختمان</label
+              >
+              <input
+                type="number"
+                id="buildingBalance"
+                class="form-control bg-light"
+                placeholder="موجودی ساختمان را وارد کنید"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          لغو
+        </button>
+        <button type="button" class="btn btn-primary">ایجاد</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 1 -->
+<div
+  class="modal fade"
+  id="modalStep1"
+  tabindex="-1"
+  aria-labelledby="modalStep1Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <form [formGroup]="mobileForm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-primary" id="modalStep1Label">
+            معرفی به مدیر ساختمان
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            اگر ساختمان خود را در لیست اصلی مشاهده نمی‌کنید مراحل زیر باید طی
+            شود:
+          </p>
+          <ol>
+            <li class="text-primary">دعوت از مدیر</li>
+            <li class="text-primary">ایجاد آپارتمان توسط مدیر</li>
+            <li class="text-primary">وارد کردن اطلاعات شما توسط مدیر</li>
+          </ol>
+          <p class="text-warning">
+            اگر عضویت شما در سامانه توسط مدیر انجام شده است، با همان شماره که
+            مدیر ساختمان برای شما ثبت کرده است وارد شوید.
+          </p>
+          <p class="text-warning">
+            اگر هیچ‌کدام از مسیرهای بالا طی نشده است از طریق کادر زیر مدیر
+            ساختمان خود را به برنامه شارژیو دعوت نمایید.
+          </p>
+          <div class="mb-3">
+            <label for="mobileNumber" class="form-label text-primary"
+              >شماره موبایل</label
+            >
+            <input
+              type="text"
+              id="mobileNumber"
+              class="form-control bg-light"
+              formControlName="mobile"
+              placeholder="09XXXXXXXXX"
+            />
+          </div>
+          <div
+            *ngIf="mobile?.invalid && mobile?.touched"
+            class="text-danger mt-2"
+          >
+            <small *ngIf="mobile?.errors?.['invalidIranianMobile']">
+              شماره موبایل معتبر نیست.
+            </small>
+            <small *ngIf="mobile?.errors?.['required']">
+              شماره موبایل الزامی است.
+            </small>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            لغو
+          </button>
+          <button
+            type="button"
+            [disabled]="mobileForm.invalid"
+            class="btn btn-primary"
+            data-bs-dismiss="modal"
+            data-bs-toggle="modal"
+            data-bs-target="#modalStep2"
+          >
+            ذخیره
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div
+  class="modal fade"
+  id="modalStep2"
+  tabindex="-1"
+  aria-labelledby="modalStep2Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary" id="modalStep2Label">
+          آیا شما مدیر ساختمان هستید؟
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body text-center">
+        <button
+          type="button"
+          class="btn btn-primary ms-2"
+          data-bs-dismiss="modal"
+          data-bs-toggle="modal"
+          data-bs-target="#modalStep3"
+        >
+          بله
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          خیر
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div
+  class="modal fade"
+  id="modalStep3"
+  tabindex="-1"
+  aria-labelledby="modalStep3Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <form [formGroup]="usernameForm" class="w-100">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-primary" id="modalStep3Label">
+                اطلاعات مدیر
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="username" class="form-label text-primary"
+                  >نام کاربری</label
+                >
+                <input
+                  type="text"
+                  id="username"
+                  formControlName="username"
+                  class="form-control bg-light"
+                  placeholder="نام کاربری را وارد کنید"
+                />
+              </div>
+              <div
+              *ngIf="username?.invalid && username?.touched"
+              class="text-danger mt-2"
+            >
+              <small *ngIf="username?.errors?.['required']">
+                نام کاربری الزامی است
+              </small>
+            </div>
+              <div class="mb-3">
+                <label for="inviteCode" class="form-label text-primary"
+                  >کد دعوت</label
+                >
+                <input
+                  type="text"
+                  id="inviteCode"
+                  class="form-control bg-light"
+                  placeholder="کد دعوت را وارد کنید"
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                [disabled]="usernameForm.invalid"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                ذخیره
+              </button>
+            </div>
+          </div>
+    </form>
+  </div>
+</div>

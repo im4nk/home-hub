@@ -1,0 +1,40 @@
+.container-fluid {
+    background-color: #F4FDFF;
+    border-radius: 10px;
+  }
+  
+  .table {
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .table td {
+    vertical-align: middle;
+  }
+  
+  .btn-outline-primary {
+    border-radius: 20px;
+  }
+  
+  .btn-outline-secondary {
+    border-radius: 50%;
+  }
+  
+  .table-responsive {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .table-bordered {
+    border-collapse: collapse;
+  }
+  
+  .table-bordered td,
+  .table-bordered th {
+    border: 1px solid #ddd;
+  }

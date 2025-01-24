@@ -1,0 +1,10 @@
+<div class="d-flex h-100">
+    <div class="panel-sidebar h-100" [ngStyle]="togglerClicked ? {'width': '260px'} : {'width': '0px'}">
+        <panel-sidebar [toggler-clicked]="togglerClicked" (open-status)="toggleClicked($event)"></panel-sidebar>
+    </div>
+    <div class="h-100 w-100">
+        <div class="panel">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

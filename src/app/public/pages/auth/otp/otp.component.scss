@@ -1,0 +1,29 @@
+.container-fluid {
+    background-color: #f5faff;
+  }
+  
+  .bg-light {
+    background-color: #eaf7ff !important;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary {
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3700b3;
+  }
+
+  .mobile {
+    background-color: #D2E6FF;
+    border: 1px solid #D2E6FF;
+  }

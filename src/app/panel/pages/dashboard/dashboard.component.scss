@@ -1,0 +1,88 @@
+body {
+  background-color: #f5faff;
+  height: 100%;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.card {
+  border-radius: 15px;
+  height: 400px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+footer img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal-content {
+  border-radius: 15px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+input:focus {
+  border-color: #4a00e0;
+  box-shadow: 0 0 5px rgba(74, 0, 224, 0.5);
+}
+
+.modal-content {
+  border-radius: 15px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+input:focus {
+  border-color: #4a00e0;
+  box-shadow: 0 0 5px rgba(74, 0, 224, 0.5);
+}
+
+button {
+  border-radius: 20px;
+}
+
+.btn-close {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}

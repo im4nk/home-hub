@@ -1,0 +1,24 @@
+<div class="sidebar-container h-100 w-100 position-relative">
+    <div class="d-flex flex-column align-items-center">
+        <a class="d-xl-none text-decoration-none" (click)="toggleSidebar()"><img src="assets/images/Menu Hamburger.svg" alt="icon" class="sidebar-icon"></a>
+        <div class="w-100 overflow-auto">
+            <div class="d-flex justify-content-center align-items-center">
+                <div>
+                    <img class="home-hub-logo" src="assets/images/home-hub.svg" alt="home-hub">
+                </div>
+                <h4>هوم هاب</h4>
+            </div>
+            <ul class="nav nav-pills flex-column mt-4 align-items-center px-0 w-100">
+                <ng-container *ngFor="let menuItem of mainMenu; let i = index">
+                    <li class="d-inline-block my-2 w-100">
+                        <ng-container>
+                            <a class="btn btn-outline-light border-0 w-100 text-end items-color" role="button" (click)="applyMenuItem(menuItem.link)" [ngClass]="(changeColor === i) ? 'activeChildItem bg-white' : ''">
+                                <i class="px-2 items-color float-end" [class]="menuItem.icon"></i>{{ menuItem.title }}
+                            </a>
+                        </ng-container>
+                    </li>
+                </ng-container>
+            </ul>
+        </div>
+    </div>
+</div>

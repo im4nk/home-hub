@@ -1,0 +1,35 @@
+.container-fluid {
+    background-color: #f0f8ff;
+  }
+  
+  .card {
+    border-radius: 15px;
+  }
+  
+  textarea {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  textarea:focus {
+    border-color: #4a00e0;
+    box-shadow: 0 0 5px rgba(74, 0, 224, 0.5);
+  }
+  
+  .btn-primary {
+    background-color: #4a00e0;
+    border-color: #4a00e0;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3a00b0;
+    border-color: #3a00b0;
+  }
+  
+  hr {
+    border-top: 2px solid #4a00e0;
+  }
+
+  .text-first {
+    color: #3B05FF;
+  }

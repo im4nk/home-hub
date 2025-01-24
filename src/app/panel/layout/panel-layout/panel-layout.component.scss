@@ -1,0 +1,16 @@
+.panel-sidebar {
+    position: fixed;
+    z-index: 1031;
+    transition: right 0.3s ease-in-out;
+    width: 260px;
+}
+
+.panel {
+    padding-right: 260px;
+}
+
+@media (max-width: 1200px) {
+    .panel {
+        padding-right: 0px;
+    }
+}

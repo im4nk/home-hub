@@ -1,0 +1,16 @@
+.container-fluid {
+    background-color: #f5faff;
+  }
+  
+  .bg-light {
+    background-color: #eaf7ff !important;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+  }
